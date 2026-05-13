@@ -1,16 +1,66 @@
 * {
-    background-color: blue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(138, 138, 238);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: black;
+    padding: 40px;
+}
+
+.oops {
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
 }
 
 p {
-    font-size: 50px;
-    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
 }
-h1 {
-    font-size: 50px;
-    text-align: center;
+
+button {
+    font-size: 28px;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
 }
-a {
-    font-size: 50px;
-    text-align: center;
+
+.youtube-link,
+.error-pagina,
+.mail-me {
+    color: darkblue;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+audio {
+    margin-top: 20px;
+}
+
+}
+footer {
+    position: fixed;
+    right: 20px;
+    nav-up: 20px;
+}
+
+.top-left-404 {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: darkblue;
+    text-decoration: underline;
+    font-size: 25px;
+    font-weight: bold;
 }
