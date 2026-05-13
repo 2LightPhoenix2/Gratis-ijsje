@@ -13,10 +13,11 @@ body {
 }
 
 .oops {
-    font-size: 70px;
+    font-size: 100px;
     font-weight: bold;
-    margin-top: 30px;
+    color: #222;
     margin-bottom: 20px;
+    letter-spacing: 4px;
 }
 
 h1 {
@@ -31,14 +32,14 @@ p {
 
 button {
     font-size: 28px;
-    padding: 10px;
+    padding: 10px 20px;
     margin-top: 20px;
     cursor: pointer;
+    border-radius: 10px;
+    border: none;
 }
 
-.youtube-link,
-.error-pagina,
-.mail-me {
+.youtube-link {
     color: darkblue;
     text-decoration: underline;
     font-size: 25px;
@@ -48,19 +49,16 @@ audio {
     margin-top: 20px;
 }
 
-}
 footer {
-    position: fixed;
-    right: 20px;
-    nav-up: 20px;
+    margin-top: 40px;
 }
-
 .top-left-404 {
     position: fixed;
-    top: 20px;
-    left: 20px;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
     color: darkblue;
     text-decoration: underline;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
 }
