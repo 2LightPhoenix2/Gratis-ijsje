@@ -1,0 +1,90 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(238, 230, 138);
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-align: center;
+    color: black;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 70px;
+    margin-bottom: 30px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+h2 {
+    font-size: 45px;
+    margin-bottom: 30px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+p {
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.button {
+    font-size: 20px;
+    padding: 15px 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+}
+
+.special-text {
+    font-size: 35px;
+    line-height: 1.5;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 7px;
+    border: 2px solid #222;
+    font-size: 20px;
+    background-color: aliceblue;
+    color: #222;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: lightblue;
+    color: black;
+}

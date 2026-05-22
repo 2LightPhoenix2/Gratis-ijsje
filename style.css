@@ -1,7 +1,6 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
-
 
 * {
     margin: 0;
@@ -11,39 +10,59 @@ html {
 
 body {
     background-color: rgb(138, 138, 238);
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins';
     text-align: center;
     color: black;
     padding: 40px;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    font-family: 'Poppins';
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+p {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 7px;
+    border: 2px solid #222;
+    font-size: 20px;
+    background-color: aliceblue;
+    color: #222;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: lightblue;
+    color: black;
 }
 
 .oops {
     font-size: 100px;
     font-weight: bold;
     color: #222;
-    margin-bottom: 20px;
     letter-spacing: 4px;
-}
-
-h1 {
-    font-size: 60px;
-    margin-bottom: 20px;
-    font-family:'Courier New', Courier, monospace;
-}
-
-p {
-    font-size: 35px;
-    margin-bottom: 30px;
-    margin-top: 30px;    
-}
-
-button {
-    font-size: 28px;
-    padding: 10px 20px;
-    margin-top: 20px;
-    cursor: pointer;
-    border-radius: 10px;
-    border: none;
 }
 
 .youtube-link {
@@ -57,17 +76,36 @@ audio {
 }
 
 footer {
-    margin-top: 40px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: transparent;
 }
+
 .top-left-404 {
-    bottom: 60px;
-    left: 50%;
-    transform: translateX(-50%);
+    text-align: center;
+    color: darkblue;
+    text-decoration: underline;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Poppins';
+}
+
+.Phoenix {
+    text-align: center;
     color: darkblue;
     text-decoration: underline;
     font-size: 30px;
     font-weight: bold;
-    font-family:'Courier New', Courier, monospace;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .list_container {
@@ -77,4 +115,34 @@ footer {
 .list {
     display: inline-block;
     text-align: left;
+}
+
+.Links {
+    font-size: 30px;
+    color: darkblue;
+}
+
+.Songs {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.Titel {
+    font-size: 95px;
+}
+
+button {
+    border-radius: 7px;
+    border-color: #222;
+    font-size: 30px;
+    user-select: none;
+    background-color: aliceblue;
+    color: #222;
+    padding: 5px 15px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: lightblue;
+    color: black;
 }
