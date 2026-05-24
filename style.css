@@ -172,4 +172,15 @@ button:hover {
     -webkit-text-stroke: 2px black;
     line-height: 1.2;
     padding: 10px;
+}
+
+.klok{
+    position: fixed;
+    bottom: 1rem;
+    right: 1.5rem;
+    text-align: right;
+    background-color: #00d5f1;
+    border-radius: 20%;
+    border: 7px solid #2d8590;
+    padding: 0.5rem;
 } 
