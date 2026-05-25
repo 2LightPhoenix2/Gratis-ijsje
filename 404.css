@@ -13,7 +13,7 @@ body {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     text-align: center;
     color: black;
-    padding: 40px;
+    padding: 40px; 
 }
 
 h1 {
@@ -77,7 +77,7 @@ a:visited {
 }
 
 a:hover {
-  color: lightblue;
+  color: rgb(230, 173, 173);
 }
 
 .clipping-effect {

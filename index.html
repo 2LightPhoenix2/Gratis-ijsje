@@ -13,6 +13,7 @@
 <body>
     <h1 id="Up" class="clipping-effect">Welkom op mijn website</h1>
         <p>Bookmarks</p>
+
 <div>
     <a class="Links" href="#Mezelf">Mezelf</a>
 </div>    
@@ -24,27 +25,33 @@
 <div>
     <a class="Links" href="#Scratch">Scratch</a>
 </div>
+
     <p>Vind je ijs lekker?</p>
 
     <a class="youtube-link" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
         Youtube
     </a>
+
     <br><br>
+
     <a class="youtube-link" href="https://leerling.somtoday.nl/rooster" target="_blank" rel="noopener noreferrer">
         Somtoday
     </a>
-     <br><br>
+
+    <br><br>
+
     <a class="youtube-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">
         Github
     </a>
 
     <div class="list_container">
         <p>Ik hou van:</p>    
-            <ol class="list">
-                <li>Brawl Stars</li>
-                <li>Schaken</li>
-                <li>Tennis</li>
-            </ol>
+
+        <ol class="list">
+            <li>Brawl Stars</li>
+            <li>Schaken</li>
+            <li>Tennis</li>
+        </ol>
     </div>
 
     <audio controls>
@@ -64,40 +71,63 @@
     </audio>
 
     <br><br>
+
     <h1 class="clipping-effect">3 Html pages</h1>
-        <a class="Phoenix" href="Phoenix.html">Phoenix</a>
+
+    <a class="Phoenix" href="Phoenix.html">Phoenix</a>
+
     <br></br>
-        <a class="Phoenix" href="BrawlStars.html">Brawl Stars</a>
+
+    <a class="Phoenix" href="BrawlStars.html">Brawl Stars</a>
+
     <br></br>
-        <a class="Phoenix" href="Mezelf.html">Mezelf</a>
+
+    <a class="Phoenix" href="Mezelf.html">Mezelf</a>
+
     <br></br>
 
     <br><br>
+
     <h1 id="Mezelf">Mezelf</h1>
-        <p>
-            Ik ben Oliviér en ik heb deze website gemaakt, mijn lievelingsdier is een kuiken en mijn lievelingskleur is geel, ik zit op verschillende soorten sporten: Tennis, judo, schaken, atletiek en piano.
-        </p>
+
+    <p>
+        Ik ben Oliviér en ik heb deze website gemaakt, mijn lievelingsdier is een kuiken en mijn lievelingskleur is geel, ik zit op verschillende soorten sporten: Tennis, judo, schaken, atletiek en piano.
+    </p>
+
     <h1 id="Brawl Stars">Brawl Stars</h1>
-        <p>
-            Ik speel Brawl Stars. Ik heb 77000 trofeeën en ik heb elke brawler in de game. Ik ben bijna meteor fame. Ik heb al 2 keer legendary gehaald in ranked. Ik zit nu damian naar 1000 trofeeën te pushen.
-        </p>
+
+    <p>
+        Ik speel Brawl Stars. Ik heb 77000 trofeeën en ik heb elke brawler in de game. Ik ben bijna meteor fame. Ik heb al 2 keer legendary gehaald in ranked. Ik zit nu damian naar 1000 trofeeën te pushen.
+    </p>
+
     <h1 id="Scratch">Scratch</h1>
-        <p>
-            Ik scratch ook heel veel en ik ben er al best goed in ik heb 1 game met bijna 300 views. Ik maak ook games met tutorials van Griffpatch, dat is een hele goede scratcher die ook tutorials en andere video's maakt.
-        </p>
+
+    <p>
+        Ik scratch ook heel veel en ik ben er al best goed in ik heb 1 game met bijna 300 views. Ik maak ook games met tutorials van Griffpatch, dat is een hele goede scratcher die ook tutorials en andere video's maakt.
+    </p>
+
     <footer></footer>
-        <a href="mailto:125906@chrlyceumdelft.nl">
-            <button class="button">Mail me!</button>
-        </a>
+
+    <a href="mailto:125906@chrlyceumdelft.nl">
+        <button class="button">Mail me!</button>
+    </a>
+
     <br></br>
-        <a class="top-left-404" href="404.html">404</a>
+
+    <a class="top-left-404" href="404.html">404</a>
+
     <br><br>
-            <button id="Clicked" onclick="showAlert()">Alert</button>
+
+    <button id="Clicked" onclick="showAlert()">Alert</button>
+
     <br><br>
+
     <div>
         <a class="Links" href="#Up">Back Up</a>
     </div>
-        <p id="klok" class="klok"></p>
+
+    <p id="klok" class="klok"></p>
+
 <script>
 function updateClock() {
   document.getElementById("klok").innerText = new Date().toLocaleTimeString();
@@ -105,12 +135,28 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 </script>
+
+<div class="theme-toggle" id="themeToggle">
+    <div class="toggle-circle">
+        <span class="icon sun">☀</span>
+        <span class="icon moon">☾</span>
+    </div>
+</div>
+<script>
+const toggle = document.getElementById("themeToggle");
+
+toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+});
+</script>
+
     <br><br>
     <br><br>
     <br><br>
     <br><br>
     <br><br>
     <br><br>
+
 </body>
 
-</html>
+</html> 

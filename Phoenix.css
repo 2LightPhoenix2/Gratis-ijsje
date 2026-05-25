@@ -54,7 +54,7 @@ a:visited {
 }
 
 a:hover {
-  color: lightblue;
+  color: rgb(230, 173, 173);
 }
 
 .text-shadow-glow {

@@ -31,7 +31,7 @@ a:visited {
 }
 
 a:hover {
-  color: lightblue;
+  color: rgb(230, 173, 173);
 }
 
 p {
@@ -172,15 +172,155 @@ button:hover {
     -webkit-text-stroke: 2px black;
     line-height: 1.2;
     padding: 10px;
-}
+} 
 
 .klok{
     position: fixed;
     bottom: 1rem;
     right: 1.5rem;
     text-align: right;
-    background-color: #00d5f1;
+    background-color: #00d5f1; 
     border-radius: 20%;
     border: 7px solid #2d8590;
     padding: 0.5rem;
 } 
+
+body {
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
+body.dark {
+    background: #000;
+    color: white;
+}
+
+body.dark p,
+body.dark h1,
+body.dark li,
+body.dark label,
+body.dark .Links,
+body.dark .Phoenix,
+body.dark .top-left-404,
+body.dark .youtube-link,
+body.dark .Songs {
+    color: white;
+}
+
+body.dark button {
+    background-color: #222;
+    color: white;
+    border-color: white;
+}
+
+body.dark button:hover {
+    background-color: #444;
+}
+
+body.dark .klok {
+    background-color: #222;
+    border-color: #555;
+    color: white;
+}
+
+.theme-toggle {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    width: 120px;
+    height: 60px;
+    background: #e5e5e5;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 9999;
+    box-shadow:
+        inset 2px 2px 5px rgba(0,0,0,0.2),
+        inset -2px -2px 5px rgba(255,255,255,0.8);
+    transition: 0.5s;
+}
+
+body.dark .theme-toggle {
+    background: #222;
+}
+
+.toggle-circle {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(145deg,#ffcc33,#ff9900);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+body.dark .toggle-circle {
+    transform: translateX(60px);
+    background: linear-gradient(145deg,#555,#222);
+}
+
+.icon {
+    position: absolute;
+    font-size: 28px;
+    color: white;
+    transition: 0.5s;
+}
+
+.sun {
+    opacity: 1;
+}
+
+.moon {
+    opacity: 0;
+}
+
+body.dark .sun {
+    opacity: 0;
+}
+
+body.dark .moon {
+    opacity: 1;
+} 
+
+.input-box{
+    position: relative;
+    width: 300px;
+    margin: 30px auto;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 15px 10px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+    background: transparent;
+}
+
+.input-box label{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 5px;
+    color: #000000;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+    top: 0;
+    font-size: 0.8rem;
+    color: #000000;
+}
+
+.label {
+    font-size: 25px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
