@@ -31,7 +31,7 @@ a:visited {
 }
 
 a:hover {
-  color: rgb(230, 173, 173);
+  color: rgb(255, 255, 0);
 }
 
 p {
@@ -68,7 +68,8 @@ p {
 .youtube-link {
     color: darkblue;
     text-decoration: underline;
-    font-size: 25px;
+    font-size: 30px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 audio {
@@ -139,7 +140,7 @@ button {
     background-color: aliceblue;
     color: #222;
     padding: 5px 15px;
-    transition: transform 0.6s;
+    transition: transform 0.5s;
 }
 
 button:hover {
@@ -176,12 +177,12 @@ button:hover {
 
 .klok{
     position: fixed;
-    bottom: 1rem;
-    right: 1.5rem;
+    bottom: 0.7rem;
+    right: 1rem;
     text-align: right;
-    background-color: #00d5f1; 
+    background-color: #ffffff; 
     border-radius: 20%;
-    border: 7px solid #2d8590;
+    border: 5px solid #2d8590;
     padding: 0.5rem;
 } 
 
@@ -197,12 +198,11 @@ body.dark {
 body.dark p,
 body.dark h1,
 body.dark li,
-body.dark label,
-body.dark .Links,
-body.dark .Phoenix,
-body.dark .top-left-404,
-body.dark .youtube-link,
-body.dark .Songs {
+body.dark Links,
+body.dark Phoenix,
+body.dark top-left-404,
+body.dark youtube-link,
+body.dark Songs {
     color: white;
 }
 
