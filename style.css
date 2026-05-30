@@ -16,6 +16,8 @@ body {
     background: linear-gradient(120deg, #84fab0, #8fd3f4);
 }
 
+
+
 h1 {
     font-size: 60px;
     margin-bottom: 30px;
@@ -107,6 +109,25 @@ footer {
     font-size: 30px;
     font-weight: bold;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.Profile {
+    position: fixed;
+    right: 50px;
+    top: 40px;
+    width: 80px;
+    height: 80px;
+    background: #e5e5e5;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.ProfileLink {
+    position: absolute;
+    top: 20%;
+    left: 22%;
+    font-size: 35px;
+    text-decoration: none;
 }
 
 .list_container {
