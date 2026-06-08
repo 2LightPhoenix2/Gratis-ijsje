@@ -1,19 +1,27 @@
-body{
-    margin: 0%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+body {
+    margin: 0;
+    min-height: 100vh;
     background-color: hsl(0, 0%, 95%);
 }
-#calculator{
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+#calculator {
     font-family: Arial, sans-serif;
     background-color: hsl(0, 0%, 15%);
     border-radius: 15px;
     max-width: 500px;
     overflow: hidden;
 }
-#display{
+
+#display {
     width: 100%;
     padding: 20px;
     font-size: 5rem;
@@ -21,13 +29,15 @@ body{
     border: none;
     background-color: white;
 }
-#keys{
+
+#keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     padding: 25px;
 }
-button{
+
+button {
     width: 100px;
     height: 100px;
     border-radius: 50px;
@@ -39,24 +49,26 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: hsl(0, 0%, 40%);
 }
 
-button:active{
+button:active {
     background-color: hsl(0, 0%, 50%);
 }
 
-.operator-btn{
+.operator-btn {
     background-color: hsl(35, 100%, 55%);
 }
 
-.operator-btn:hover{
+.operator-btn:hover {
     background-color: hsl(35, 100%, 65%);
 }
-.operator-btn:active{
+
+.operator-btn:active {
     background-color: hsl(35, 100%, 75%);
 }
+
 .button {
     display: inline-block;
     border-radius: 7px;
@@ -66,7 +78,7 @@ button:active{
     color: #222;
     padding: 10px 20px;
     text-decoration: none;
-    margin-top: 20px;
+    transition: 0.3s;
 }
 
 .button:hover {
